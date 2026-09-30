@@ -1,0 +1,25 @@
+sabse pahle hamne [userManager] karke ek obj create kiya uske andar [user: [] ] ek array create kiya, jiske andar hamare users aayenge, iske baad jab bhi hamara form submit hoga to hamara user add hona chahiye iske liye ham [init: function () {}] method banayenge, iske alawa iska kaam hai ye shuruaat me chale, fir ham 2 method create karenge [addUser: function () {}] or [removeUser: function () {}] 
+
+
+1. sabse pahle form ko select karenge, or ham form par evt listenr lagyenge with prevent default, isme agar ham console.log(this) karenge to hame form dikhega console par kyonki evt par this selected element dikhata hai, yaha hamara form hai to form batayega, par hame chahiye ki element ki jagah hamara obj ho [userManager] to ham evtlistener me function pass karne ki jagah this ko pass kar denge (this.submitForm) or (submitForm) naam se ek new method banayenge or usme karenge prevent default, ab isme agar console.log(this) karenge to fir se hame form element dikhega console par, par hame form ki jagha hamara obj select karna hai to ham ye kar sakte hai ki (this.submitForm) me ham (.bind(this)) pass kar denge (this ki jagah ham userManager bhi pass kar sakte hai ) isse ye hoga jaha hame (submitForm)  method this ki value form dikha raha tha ab hame this ki value obj dikhegi kyonki yaha par hamari this ki value obj chal rahi hai or yaha this ki value obj isliye chal rahi hai kyonki hamne [userManager.init()] ko call kar diya tha starting me hi, hamne ise ese likha hai userManager.init() jese obj ke andar method or method me this ki value already obj hoti hai 
+
+                
+                SAMJHNE WALI BAAT
+                
+
+// userManager HAMARA EK OBJ HAI, [USER []] EK ARRAY HAI, [INIT] EK FUNCTION HAI JO JAB BHI CHALEGA TO HAMARA EVTLISTENER CALL HOGA JISME (submit evt hai) FORM SUBMIT KARNE PAR HAMARA [THIS.SUBMITFORM] CHALEGA JO KI HAMARA [SUBMITFORM] METHOD HAI OR [THIS.SUBMITFORM] KO HAMNE BIND KAR DIYA HAMARE FUNCTION KO THIS KI VALUE SE JO KI CURRUNTLY METHOD ME OBJ CHAL RAHI HAI [THIS.SUBMITFORM.BIND(THIS)]
+
+JESE HAM BIND KA USE KARTE HAI YAHA WAHI HUA this.submitForm  EK FUNCTION HO GAYA USME BIND LAGAYA OR THIS (HAMARA OBJ) PASS KAR DIYA
+
+=> this.submitForm => EK FUNCTION
+=> isme hamne BIND ka use kiya or BRACKETS me hamara OBJ pass kar diya.
+
+
+// FUNCTION ME THIS KI VALUE WINDOW HOTI HAI TO BIND HAME THIS KI VALUE CHANGE KARNE KI PERMISSION DETA HAI, BIND ME JAB BHI HAM OBJ KO PASS KARENGE TO AB FUNCTION ME THIS KI VALUE PASS HUA OBJECT HO GAYI 
+
+=> YAHA HAMENE [this] KI JAGAH [userManager] ISLIYE NAHI LIKHA KYONKI Agar object ka naam change ho gaya → Reusability khatam ho jaati hai, code toot sakta hai....
+=> ISKI JAGAH HAM [this] ISLIYE LIKH RAHE HAI KYONKI - us line pe this already userManager ko point kar raha hai OR Object ka naam change karo → code still chalega.
+
+
+
+.....................................pahle course pura complete karenge fir project.........................................

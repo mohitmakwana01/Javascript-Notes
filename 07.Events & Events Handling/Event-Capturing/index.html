@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Capturing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #222;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .a {
+            background-color: rgb(11, 95, 67);
+            height: 600px;
+            width: 600px;
+        }
+
+        .b {
+            background-color: rgb(80, 9, 73);
+            height: 500px;
+            width: 500px;
+        }
+
+        .c {
+            background-color: rgb(91, 68, 9);
+            height: 400px;
+            width: 400px;
+        }
+        button{
+            cursor: pointer;
+            color: aliceblue;
+            font-size: 18px;
+            padding: 8px;
+            background-color: rgba(199, 16, 16, 0.82);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="c">
+                <button>Click me !</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

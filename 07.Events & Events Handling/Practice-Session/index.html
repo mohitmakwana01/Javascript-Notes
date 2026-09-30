@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character Counter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #131212;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        #main {
+            font-size: 22px;
+            flex-direction: column;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            font-size: 16px;
+            padding: 7px;
+            margin-bottom: 35px;
+        }
+
+        #main1 {
+            background-color:rgb(43, 42, 42);
+            font-size: 22px;
+            flex-direction: column;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        textarea{
+            font-size: 16px;
+            padding: 7px;
+            margin-bottom: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <input type="text" placeholder="Write Anything">
+        <h1>Character Left : <span>0</span></h1>
+    </div>
+    <div id="main1">
+        <textarea rows="8" cols="50" placeholder="Write Your Comment Here"></textarea>
+        <h1>Character Left : <span id="spn">0</span></h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

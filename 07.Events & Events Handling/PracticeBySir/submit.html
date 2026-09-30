@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+        }
+
+        input {
+            display: block;
+            padding: 8px;
+            margin: 3px;
+        }
+
+        #main {
+            height: 100%;
+            width: 100%;
+        }
+
+        .card {
+            max-width: 400px;
+            margin-top: 40px;
+            border: 1px solid #7e7e7e8c;
+            padding: 15px;
+            display: inline-block;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 18px;
+            background-color: #261415e6;
+        }
+
+        .profile {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .card h3,
+        h5 {
+            margin-top: 6px;
+        }
+
+        .card p {
+            margin-top: 10px;
+        }
+
+        .profile img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .form-center {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        .card-center {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="form-center">
+            <form action="">
+                <input type="text" placeholder="Profile Pic">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Occupation">
+                <input type="text" placeholder="Info">
+                <input type="submit">
+            </form>
+        </div>
+        <div class="card-center"></div>
+    </div>
+
+
+    <script src="submit.js"></script>
+</body>
+
+</html>

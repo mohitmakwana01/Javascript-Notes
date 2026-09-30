@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: #222;
+        }
+
+        #main {
+            height: 100%;
+            /* display: flex;
+            justify-content: center; */
+        }
+
+        input {
+            padding: 5px;
+            margin: 3px;
+        }
+
+        small {
+            font-size: 17px;
+            color: rgb(216, 11, 11);
+        }
+
+        #hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <form>
+            <input type="text" placeholder="Name" id="name">
+            <div id="hide">
+                <br>
+                <small>your name should be greater than 2 character</small>
+            </div>
+            <br></br>
+            <input type="email" placeholder="Email">
+            <br></br>
+            <input type="password" placeholder="Password">
+            <br></br>
+            <select>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+            <br></br>
+            <textarea placeholder="Tell Us About You..."></textarea>
+            <br></br>
+            <input type="submit">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

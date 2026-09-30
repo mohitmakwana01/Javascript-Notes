@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation System (JavaScript)</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="container">
+        <form autocomplete="off">
+
+            <div class="box">
+                <h2>Login</h2>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter your email" autocomplete="off">
+                    <small class="error" id="emailError">Invalid Email</small>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <small class="error" id="passError">Invalid Password</small>
+                </div>
+
+                <button type="submit">Submit</button>
+
+                <div id="resultMsg">Everything is correct</div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>

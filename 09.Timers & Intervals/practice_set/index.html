@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Download Simulation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0f172a;
+        }
+
+        .card {
+            width: 340px;
+            padding: 35px;
+            border-radius: 18px;
+            backdrop-filter: blur(18px);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            text-align: center;
+            color: #e5e7eb;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        h2 {
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        .progress-box {
+            width: 100%;
+            height: 14px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #22d3ee, #6366f1);
+            transition: width 0.3s ease;
+        }
+
+        .percent {
+            margin-top: 18px;
+            font-size: 18px;
+            color: #cbd5e1;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Downloading File</h2>
+
+        <div class="progress-box">
+            <div class="progress-bar" id="progress"></div>
+        </div>
+
+        <div class="percent" id="percent">0%</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
